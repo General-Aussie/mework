@@ -7,12 +7,18 @@
   scroll-behavior: smooth;
 }
 
+html,
+body{
+width:100%;
+overflow-x:hidden;
+}
+
 .container {
   width: 100%;
   height: 100vh;
   min-height: 100px;
   box-sizing: border-box;
-  overflow: hidden;
+  overflow: visible;
   position: relative;
 }
 
@@ -20,6 +26,7 @@
   width: 100%;
   height: 100vh;
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(90, 90, 90, 0.7));
+  background-size: cover;
   position: absolute;
   top: 0;
 }
@@ -174,7 +181,7 @@ ul.sticky .right li a:hover {
   background: linear-gradient(to right bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5));
   opacity: 70%;
   width: 380px;
-  min-height: fit-content;
+  height: fit-content;
   position: relative;
   margin: 2% auto;
   padding-top: 40px;
@@ -184,7 +191,7 @@ ul.sticky .right li a:hover {
   border-radius: 20px;
   color: white;
   font-size: 13px;
-  transform: translate(1%, 30%);
+  transform: translate(0%, 30%);
 }
 
 .loginbox form p {
@@ -284,7 +291,7 @@ ul.sticky .right li a:hover {
 
 .foot {
   padding: 10px;
-  width: 100vw;
+  /* width: 100vw; */
 }
 
 footer ol p {
@@ -330,7 +337,7 @@ footer ol li:hover {
 
 
 /*responsive page for mobile*/
-@media only screen and (min-width: 250px) {
+@media only screen and (min-width: 200px) {
   .right {
     padding-top: 10px;
     padding-left: 10px;
@@ -350,30 +357,30 @@ footer ol li:hover {
   .right li a {
     text-decoration: none;
     color: white;
-    font-size: 11px;
+    font-size: 9px;
     font-weight: 700;
     transition: font 0.3s;
   }
 
   .right li a:hover {
     color: brown;
-    font-size: 13px;
+    font-size: 11px;
     font-weight: 700;
   }
 
   #logo {
-    font-size: 3.2vh;
+    font-size: 2vh;
     font-weight: 700;
     cursor: pointer;
     margin-right: 10px;
-    margin-top: 16px;
+    margin-top: 19px;
     margin-bottom: 20px;
-    margin-left: 20px;
+    margin-left: 10px;
     color: white;
   }
 
   .navpic {
-    width: 20px;
+    width: 15px;
     height: 20px;
     cursor: pointer;
     margin: 20px 10px auto;
@@ -382,13 +389,13 @@ footer ol li:hover {
   #join a {
     background-color: brown;
     color: white;
-    padding: 8px 15px;
+    padding: 5px 6px;
     border-radius: 10px;
     transition: padding 0.5s;
   }
 
   #join a:hover {
-    padding: 8px 20px;
+    padding: 6px 8px;
   }
 
   ul.sticky {
@@ -404,23 +411,25 @@ footer ol li:hover {
   ul.sticky .right li a {
     color: black;
     font-weight: 700;
-    font-size: 11px;
+    font-size: 9px;
     transition: 0.3s;
   }
 
   ul.sticky .right li a:hover {
     color: brown;
-    font-size: 12px;
+    font-size: 11px;
     font-weight: 700;
   }
 
   .loginbox {
     background: linear-gradient(to right bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5));
     opacity: 70%;
-    width: 350px;
+    width: 300px;
+    height: 300px;
     min-height: fit-content;
     position: relative;
     margin: 2% auto;
+    margin-bottom: 20px;
     padding-top: 40px;
     padding-bottom: 90px;
     padding-left: 5px;
@@ -428,7 +437,7 @@ footer ol li:hover {
     border-radius: 20px;
     color: white;
     font-size: 11px;
-    transform: translate(1%, 30%);
+    /* transform: translate(0%, 3%); */
   }
 
   .loginbox form p {
@@ -439,7 +448,7 @@ footer ol li:hover {
   }
 
   .field-line-username {
-    padding-left: 77px;
+    padding-left: 50px;
     padding-top: 60px;
     text-transform: capitalize;
     font-size: 1em;
@@ -447,7 +456,7 @@ footer ol li:hover {
   }
 
   .field-line-password {
-    padding-left: 77.5px;
+    padding-left: 50.5px;
     text-transform: capitalize;
     font-size: 1em;
     font-weight: 700;
@@ -524,25 +533,25 @@ footer ol li:hover {
 
   .beforefooter {
     display: flex;
-    padding-left: 10px;
+    padding-left: 5px;
     padding-top: 30px;
   }
 
   .foot {
-    padding: 10px;
+    padding: 5px;
     width: 100vw;
   }
 
   footer ol p {
     font-weight: 800;
     text-transform: capitalize;
-    font-size: 12px;
+    font-size: 10px;
     padding-bottom: 5px;
   }
 
   footer ol li {
     list-style-type: none;
-    font-size: 9px;
+    font-size: 8px;
     padding: 3px;
     font-weight: 600;
     cursor: pointer;
